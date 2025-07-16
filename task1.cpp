@@ -28,10 +28,12 @@ class Task1 {
     }
 };
 
-int main() {
-    Task1 calc;
-    cout << "Input: \"kitten\", \"sitting\"\n" << "Output: " << calc.EditDistance("kitten", "sitting") <<"\n"<< endl;
-    cout << "Input: \"flaw\", \"lawn\"\n" << "Output: " << calc.EditDistance("flaw", "lawn") <<"\n" << endl;
-    cout << "Input: \"algorithm\", \"logarithm\"\n" << "Output: " << calc.EditDistance("algorithm", "logarithm") <<"\n" << endl;
-    return 0;
-}
+/* ...... below code is for testing the provided testcases ...... */ 
+
+// int main() {
+//     Task1 T1;
+//     cout << "Input: \"kitten\", \"sitting\"\n" << "Output: " << T1.EditDistance("kitten", "sitting") <<"\n"<< endl;
+//     cout << "Input: \"flaw\", \"lawn\"\n" << "Output: " << T1.EditDistance("flaw", "lawn") <<"\n" << endl;
+//     cout << "Input: \"algorithm\", \"logarithm\"\n" << "Output: " << T1.EditDistance("algorithm", "logarithm") <<"\n" << endl;
+//     return 0;
+// }

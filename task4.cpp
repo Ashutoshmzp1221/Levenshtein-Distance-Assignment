@@ -31,11 +31,13 @@ class Task4 {
     }
 };
 
-int main() {
-    Task4 calc;
-    cout << "\nTesting for the Task4 that is the optimise version of first task" << endl; 
-    cout << "Input: \"kitten\", \"sitting\"\n" << "Output: " << calc.optimisedEditDistance("kitten", "sitting") <<"\n"<< endl;
-    cout << "Input: \"flaw\", \"lawn\"\n" << "Output: " << calc.optimisedEditDistance("flaw", "lawn") <<"\n" << endl;
-    cout << "Input: \"algorithm\", \"logarithm\"\n" << "Output: " << calc.optimisedEditDistance("algorithm", "logarithm") <<"\n" << endl;
-    return 0;
-}
+/* ...... below code is for testing the provided testcases ...... */ 
+
+// int main() {
+//     Task4 T4;
+//     cout << "\nTesting for the Task4 that is the optimise version of first task" << endl; 
+//     cout << "Input: \"kitten\", \"sitting\"\n" << "Output: " << T4.optimisedEditDistance("kitten", "sitting") <<"\n"<< endl;
+//     cout << "Input: \"flaw\", \"lawn\"\n" << "Output: " << T4.optimisedEditDistance("flaw", "lawn") <<"\n" << endl;
+//     cout << "Input: \"algorithm\", \"logarithm\"\n" << "Output: " << T4.optimisedEditDistance("algorithm", "logarithm") <<"\n" << endl;
+//     return 0;
+// }

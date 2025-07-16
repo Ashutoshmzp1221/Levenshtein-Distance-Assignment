@@ -12,7 +12,7 @@ class Task3 {
         vector<string> result;
 
         for(const string& str : dictionary) {
-            int currCost = T2.EditDistance(input, str, Ci, Cd, Cs);
+            int currCost = T2.weightedEditDistance(input, str, Ci, Cd, Cs);
             if(currCost < minCost) {
                 minCost = currCost;
                 result.clear();
@@ -25,16 +25,19 @@ class Task3 {
     }
 };
 
-int main() {
-    Task3 t3;
-    vector<string> dictionary = {"cred", "bet", "shat", "that", "brad", "cart", "brat", "card"};
-    string input = "dat";
-    vector<string> matches = t3.spellCheacker(input, dictionary, 1, 1, 1);
-    cout << "Input: " << '"'<<input <<'"'<< endl;
-    cout << "Output: ";
-    for (const string& word : matches) {
-        cout << '"'<<word <<'"' << " ";
-    }
-    cout << endl;
-    return 0;
-}
+
+/* ...... below code is for testing the provided testcases ...... */ 
+
+// int main() {
+//     Task3 T3;
+//     vector<string> dictionary = {"cred", "bet", "shat", "that", "brad", "cart", "brat", "card"};
+//     string input = "dat";
+//     vector<string> matches = T3.spellCheacker(input, dictionary, 1, 1, 1);
+//     cout << "Input: " << '"'<<input <<'"'<< endl;
+//     cout << "Output: ";
+//     for (const string& word : matches) {
+//         cout << '"'<<word <<'"' << " ";
+//     }
+//     cout << endl;
+//     return 0;
+// }

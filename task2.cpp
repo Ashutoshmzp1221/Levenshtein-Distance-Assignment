@@ -5,7 +5,7 @@ using namespace std;
 
 class Task2 {
     public:
-    int EditDistance(string s1, string s2, int Ci, int Cd, int Cs) {
+    int weightedEditDistance(string s1, string s2, int Ci, int Cd, int Cs) {
         int n = s1.length();
         int m = s2.length();
 
@@ -29,10 +29,12 @@ class Task2 {
     }
 };
 
+/* ...... below code is for testing the provided testcases ...... */ 
+
 // int main() {
-//     Task2 t;
-//     cout << "Input: \"kitten\", \"sitting\", 1, 2, 3 \n" << "Output: " << t.EditDistance("kitten", "sitting", 1, 2, 3)<<"\n" << endl;
-//     cout << "Input: \"flaw\", \"lawn\", 2, 2, 1) \n" << "Output: "<< t.EditDistance("flaw", "lawn", 2, 2, 1) << "\n" <<endl;
-//     cout << "Input: \"algorithm\", \"logarithm\", 1, 3, 2 \n" << "Output: " << t.EditDistance("algorithm", "logarithm", 1, 3, 2) << "\n"<<endl;
+//     Task2 T2;
+//     cout << "Input: \"kitten\", \"sitting\", 1, 2, 3 \n" << "Output: " << T2.weightedEditDistance("kitten", "sitting", 1, 2, 3)<<"\n" << endl;
+//     cout << "Input: \"flaw\", \"lawn\", 2, 2, 1) \n" << "Output: "<< T2.weightedEditDistance("flaw", "lawn", 2, 2, 1) << "\n" <<endl;
+//     cout << "Input: \"algorithm\", \"logarithm\", 1, 3, 2 \n" << "Output: " << T2.weightedEditDistance("algorithm", "logarithm", 1, 3, 2) << "\n"<<endl;
 //     return 0;
 // }
