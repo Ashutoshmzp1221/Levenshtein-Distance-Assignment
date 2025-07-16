@@ -16,4 +16,7 @@
 
 ### Task 4: Optimised version of basic edit distance function
 - File: `task4.cpp` and `task4_Explanation.md`
+- task4.cpp contains the space optimised code for the standard levenshtein algorithm.
+- task4_Explanation.md it contains the explanation. Discussion of the time and space optimisation.
+
 
