@@ -14,10 +14,34 @@
 
     1. Space optimisation by using only two rows of the array:-
         - So in this technique we don't need to store the entire DP matrix rather we will use only two rows i.e previous row and currect row at any time.
+        
+        - Below is the optimised code which is using the two rows of the array only to optimise the space.
 
-        <img width="573" height="489" alt="Screenshot 2025-07-16 at 5 56 40 PM" src="https://github.com/user-attachments/assets/464ac3d4-8fdf-40fe-a5ee-ed9cf315fd94" />
+                int optimisedEditDistance(string s1, string s2) {
+                    int n = s1.size();
+                    int m = s2.size();
 
-        Above is the provide snapshot of the optimized code.
+                    vector<int> prev(m + 1, 0), curr(m + 1, 0);
+
+                    for(int j = 0; j <= m; j++) prev[j] = j;
+
+                    for(int i = 1; i <= n; i++) {
+                        curr[0] = i;
+                        for(int j = 1; j <= m; j++) {
+                            if(s1[i - 1] == s2[j - 1]) curr[j] = prev[j - 1];
+                            else {
+                                curr[j] = 1 +  min({
+                                    prev[j],
+                                    curr[j - 1],
+                                    prev[j - 1]
+                                });
+                            }
+                        }
+                        prev = curr;
+                    }
+                    return prev[m];
+                }
+
         - This will reduce the space complexity and final space complexity will be :- 
             - Space Complexity :- O(min(n,m));
 
